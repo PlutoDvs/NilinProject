@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Course Selection system</title>
+</head>
+<body class="font-mono font-bold text-2xl">
+<h1 class="text-4xl px-20 py-10">API Endpoints guide</h1>
+<div class="overflow-x-auto relative shadow-md sm:rounded-lg px-48 rounded-3xl">
+    <table class="w-full text-lg text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xl text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+            <th scope="col" class="py-3 px-6">
+                Url
+            </th>
+            <th scope="col" class="py-3 px-6">
+                Type
+            </th>
+            <th scope="col" class="py-3 px-6">
+                category
+            </th>
+            <th scope="col" class="py-3 px-6">
+                body
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/admin/getStudent/{code}/?user=(user)&password=(pass)
+            </th>
+            <td class="py-4 px-6 text-2xl text-gray-700">
+                GET
+            </td>
+            <td class="py-4 px-6">
+                Admin
+            </td>
+            <td class="py-4 px-6">
+                -
+            </td>
+        </tr>
+
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/admin/getTeacher/{name}/?user=(user)&password=(pass)
+            </th>
+            <td class="py-4 px-6 text-2xl text-gray-700">
+                GET
+            </td>
+            <td class="py-4 px-6">
+                Admin
+            </td>
+            <td class="py-4 px-6">
+                -
+            </td>
+        </tr>
+
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/admin/newStudent/?user=(user)&password=(pass)
+            </th>
+            <td class="py-4 px-6 text-2xl text-green-500">
+                POST
+            </td>
+            <td class="py-4 px-6">
+                Admin
+            </td>
+            <td class="py-4 px-6">
+                Student(json)
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/admin/newCourse/?user=(user)&password=(pass)
+            </th>
+            <td class="py-4 px-6 text-2xl text-green-500">
+                POST
+            </td>
+            <td class="py-4 px-6">
+                Admin
+            </td>
+            <td class="py-4 px-6">
+                Course(json)
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/admin/newTeacher/?user=(user)&password=(pass)
+            </th>
+            <td class="py-4 px-6 text-2xl text-green-500">
+                POST
+            </td>
+            <td class="py-4 px-6">
+                Admin
+            </td>
+            <td class="py-4 px-6">
+                Teacher(json)
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/admin/setTeacher/{id}/{name}/?user=(user)&password=(pass)
+            </th>
+            <td class="py-4 px-6 text-2xl text-blue-500">
+                PUT
+            </td>
+            <td class="py-4 px-6">
+                Admin
+            </td>
+            <td class="py-4 px-6">
+                -
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/courses/all
+            </th>
+            <td class="py-4 px-6 text-2xl text-gray-700">
+                GET
+            </td>
+            <td class="py-4 px-6">
+                None
+            </td>
+            <td class="py-4 px-6">
+                -
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/student/addCourse/{code}/{id}
+            </th>
+            <td class="py-4 px-6 text-2xl text-blue-500">
+                PUT
+            </td>
+            <td class="py-4 px-6">
+                Student
+            </td>
+            <td class="py-4 px-6">
+                -
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/student/removeCourse/{code}/{id}
+            </th>
+            <td class="py-4 px-6 text-2xl text-blue-500">
+                PUT
+            </td>
+            <td class="py-4 px-6">
+                Student
+            </td>
+            <td class="py-4 px-6">
+                -
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/student/getCourses/{code}
+            </th>
+            <td class="py-4 px-6 text-2xl text-gray-700">
+                GET
+            </td>
+            <td class="py-4 px-6">
+                Student
+            </td>
+            <td class="py-4 px-6">
+                -
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/teacher/getCourses/{name}
+            </th>
+            <td class="py-4 px-6 text-2xl text-gray-700">
+                GET
+            </td>
+            <td class="py-4 px-6">
+                Teacher
+            </td>
+            <td class="py-4 px-6">
+                -
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 hover:bg-gray-100">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                http://localhost:8080/api/student/removeStudent/{name}/{id}/{code}
+            </th>
+            <td class="py-4 px-6 text-2xl text-blue-500">
+                PUT
+            </td>
+            <td class="py-4 px-6">
+                Teacher
+            </td>
+            <td class="py-4 px-6">
+                -
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
